@@ -1,0 +1,70 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    overflow-x: hidden;
+}
+
+body{
+    background-color: #333;
+}
+
+.box{
+    background-color: yellow;
+    width: 150px;
+    height: 150px;
+   
+    position: relative;
+    top: 0;
+    left: 0;
+
+    animation: a1 5s forwards ease-in;
+    animation-iteration-count: 2;
+}
+
+@keyframes a1{
+   25%{
+     top: 100px;
+     left: 0; 
+     background-color: aqua;  
+   }
+   50%{
+      top: 100px;
+      left: 100px;  
+      background-color: coral;
+   }
+   75%{
+     top: 200px;
+     left: 100px;
+     background-color: cornflowerblue;
+   }
+   100%{
+    top: 200px;
+    left: 200px;
+    background-color: crimson;
+    
+   }
+   
+}
+
+h1{
+    animation: text_animation 5s forwards ease-out;
+    animation-iteration-count: 2;
+    position: relative;
+    color: #fff;
+    font-size: 40px;
+   
+}
+
+
+@keyframes text_animation{
+    from{
+        left: -100px;
+    }
+    to{
+        left: 100px;
+    }
+}

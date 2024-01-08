@@ -1,0 +1,28 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    display: grid;
+    gap: 10px;
+    /* minmax kullanımı */
+    
+    /* grid-template-columns: minmax(400px,1fr) 1fr 1fr; */
+    /* grid-template-columns: repeat(3,minmax(200px,1fr)); */
+
+    /* auto-fill özelliği */
+    /* Satırda daha sonrasında yanıma (n) tane eleman gelebilir diye yer tutuyor */
+    /* grid-template-columns: repeat(auto-fill,minmax(200px,400px)); */
+
+    /* auto-fit */
+    /* Yer tutma yapmaz */
+    /* grid-template-columns: repeat(auto-fit,minmax(200px,1fr)); */
+
+}
+
+.item{
+    background-color: yellow;
+    padding: 20px;
+}

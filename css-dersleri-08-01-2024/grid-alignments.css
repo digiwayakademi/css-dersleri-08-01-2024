@@ -1,0 +1,56 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    display: grid;
+    /* grid-template-columns: repeat(3,1fr); */
+    gap: 10px;
+    background-color: yellow;
+    height: 600px;
+
+    /* justify-items: stretch; //Default değer */
+    /* justify-items: center; */
+    /* justify-items: start; */
+    /* justify-items: end; */
+
+    /* align-items: stretch; // Default değer*/
+    /* align-items: center; */
+    /* align-items: start; */
+    /* align-items: end; */
+
+    grid-template-columns: repeat(3,20%);
+    grid-template-rows: repeat(2,20%);
+
+    /* justify-content: center; */
+    /* justify-content: start; //Default değer */
+    /* justify-content: end; */
+
+    /* align-content: center; */
+    /* align-content: start; //Default değer */
+    /* align-content: end; */
+
+    justify-content: center;
+    align-content: center;
+
+
+}
+
+.item{
+    background-color: #f7786b;
+}
+
+
+.item:first-child{
+    /* align-self: stretch; //Default değer */
+    /* align-self: start; */
+    align-self: center;
+    /* align-self: end; */
+    /* justify-self: stretch; //Default değer */
+    /* justify-self: start; */
+    justify-self: center;
+    /* justify-self: end; */
+
+}

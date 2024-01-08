@@ -1,0 +1,40 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #333;
+}
+
+.box{
+    background-color: yellow;
+    width: 150px;
+    height: 150px;
+    /* animation-name: a1; /* Animasyon ismi // keyframes e 
+    verdiğimiz isim ile aynı olmak zorunda */      
+    /* animation-duration: 5s; Animasyon süresi */
+    /* animation-iteration-count: 2;  /* animasyonun kaç kez tekrar edeceği 
+     // infinite değeri verirsek sonsuz kere tekrar eder */    
+    /* animation-fill-mode: backwards; /* Animasyon bittiğinde son hali ile mi yoksa 
+    ilk hali ile mi kalacağını belirlediğimiz özelliktir. forwards verirsek son hali, ,
+    backwards verirsek ilk hali ile kalır. */ 
+    /* animation-delay: 2s; Başlangıçta uygulanan gecikme süresi  */
+    /* animation-direction: alternate; // Default değer */
+    /* animation-direction: alternate-reverse; // Animasyon tersten başlar ve başa doğru hareket eder. */
+    /* animation-timing-function: ease-in; */
+   
+    /* Kısa Yazım
+
+    animation: animation-name animation-duration animation-fill-mode animation-delay animation-timing-function; */
+
+    animation: a1 5s forwards 2s ease-in;
+
+}
+
+@keyframes a1{
+    to{
+        width: 500px;
+      }
+}
